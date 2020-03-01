@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+  <div class="hd_header_wrap">
+    <div class="hd_top_bar">
+      <div class="wrap clearfix">
+        <div class="hd_indxProvce hd_has_child" id="headerSelectProvince"
+          clstag="pageclick|keycount|shouye_20181018|toolbar_SelectAddress">
+          <a class="hd_topbar_city" id="currProvince" href="javascript:void(0);">
+            <i class="icon iconfont">&#xe647;</i>
+            <span class="text">送货地址&nbsp;:</span>
+            <em>上海</em>
+          </a>
+          <div class="hd_city_select hd_city_opacity" style="display: none" id="hd_city_select"
+            data-hot="2817,上海市,2&&2816,北京市,1&&1601,广州市,19&&1607,深圳市,19&&904,南京市,12&&1213,杭州市,15&&1381,武汉市,17&&1930,成都市,22&&48131,重庆市,4&&988,苏州市,12&&51035,天津市,3&&1116,合肥市,14&&1233,温州市,15&&984,无锡市,12&&1158,宁波市,15&&978,常州市,12">
+            <a href="javascript:;" class="hd_city_close">×</a>
+            <div class="hd_cur_city_wrap clearfix">
+              <span class="hd_cur_city">搜索城市：</span>
+              <div class="hd_city_search">
+                <div class="hd_city_input">
+                  <em class="icon iconfont">&#xe64e;</em>
+                  <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入城市名称">
+                  <span class="hd_citys_close">x</span>
+                </div>
+                <div class="hd_city_suggest" style="display: none;">
+                </div>
+              </div>
+            </div>
+            <!--热门城市-->
+            <div class="hd_hot_city_wrap clearfix">
+              <span class="hd_hot_city">热门城市：</span>
+              <div class="hd_hotcity_list clearfix">
+              </div>
+            </div>
+            <!--按字母查找-->
+            <div class="hd_letter_search clearfix">
+              <p class="hd_letter_tit">按字母查找</p>
+              <div class="hd_city_initial ">
+              </div>
+            </div>
+            <div class="hd_city_list" id="hd_city_list_context">
+              <ul>
+                <li class="clearfix">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hd_topbar_home">
+          <i class="icon iconfont">&#xe648;</i>
+          <ul class="hd_topbar_home_ul">
+            <a href="//cms.yhd.com/cms/view.do?topicId=217" title="防范网络诈骗提示" target="_blank"
+              clstag="pageclick|keycount|shouye_20181018|toolbar_Announcement1">
+              <li class="hd_topbar_home_li"><span class="text">防范网络诈骗提示</span></li>
+            </a>
+            <a href="https://cms.yhd.com/cms/view.do?topicId=222" title="1号店配送费调整公告" target="_blank"
+              clstag="pageclick|keycount|shouye_20181018|toolbar_Announcement2">
+              <li class="hd_topbar_home_li"><span class="text">1号店配送费调整公告</span></li>
+            </a>
+            <a href="//cms.yhd.com/cms/view.do?topicId=229" title="1金融下线公告" target="_blank"
+              clstag="pageclick|keycount|shouye_20181018|toolbar_Announcement3">
+              <li class="hd_topbar_home_li"><span class="text">1金融下线公告</span></li>
+            </a>
+          </ul>
+        </div>
+        <div class="hd_topbar_right">
+          <ul>
+            <li id="global_unlogin">
+              <div class="hd_unlogin" clstag="pageclick|keycount|shouye_20181018|toolbar_Login">
+                <span class="hd_hi">早上好,请</span>
+                <a href="https://passport.yhd.com/passport/login_input.do" class="hd_login_link">登录&nbsp;</a>
+                <a href="https://passport.yhd.com/passport/register_input.do" class="hd_regist_link">&nbsp;注册</a>
+              </div>
+            </li>
+            <li id="global_login" class="" style="display:none" data-type="2017">
+              <div class="hd_login">
+                <div class="hd_login_name_con">
+                  <span class="hd_hi">早上好,</span>
+                  <a href="//home.yhd.com/myyhdindex/index.do" target="_blank" class="hd_login_name"
+                    clstag="pageclick|keycount|shouye_20181018|toolbar_NickName">__nickName__</a>
+                  <a href="javascript:bothSiteLogoutJsonp()" class="hd_login_out"
+                    clstag="pageclick|keycount|shouye_20181018|toolbar_LogOut">退出</a>
+                </div>
+                <a href="//vip.yhd.com" target="_blank" class="hd_vip hd_vip__gradeStyle__">__gradeDesc__</a>
+              </div>
+            <li>
+              <div class="hd_menu" clstag="pageclick|keycount|shouye_20181018|toolbar_VipClub">
+                <a href="//vip.yhd.com"><i class="icon iconfont">&#xe64a;</i><span class="text">会员俱乐部</span></a>
+              </div>
+            </li>
+            <li>
+              <div class="hd_menu" clstag="pageclick|keycount|shouye_20181018|toolbar_Orders">
+                <a href="//home.yhd.com/order/toOrderList.do" target="_blank" rel="nofollow">
+                  <i class="icon iconfont">&#xe64b;</i><span class="text">我的订单</span></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="width:100%;height: 180px;background-color:">
+      <div class="header_bp">
+        <div class="header_bp_img"
+          style="background:url(//img20.360buyimg.com/img/jfs/t26527/196/1706417703/4559/6d078fba/5bea3883N86dafa72.png) center no-repeat">
+        </div>
+        <div class="wrap hd_header">
+          <div class="hd_logo_area">
+            <a href="//www.yhd.com" class="hd_logo" clstag="pageclick|keycount|shouye_20181018|YHDLogo">
+              <img src="//img.yihaodianimg.com/front-homepage/global/images/logo/logo_new@2x.png" alt=""></a>
+            <a target="_blank" class="hd_slogan" href="javascript:;"
+              clstag="pageclick|keycount|shouye_20181018|YHDLogoAds">
+              <div class="inner"><img
+                  src="//img30.360buyimg.com/img/jfs/t28237/269/997297430/10022/b24f8009/5c05314cNf894bdef.jpg"></div>
+            </a>
+          </div>
+          <div class="hd_header_right">
+            <div class="clearfix">
+              <div class="hd_head_search">
+                <div class="hd_search_form hd_search_normal " style="top:0px" id="hdSearchForm">
+                  <div class="hd_fixed_wrap">
+                    <a href="javascript:;" class="hd_fixed_logo"><img
+                        src="//img30.360buyimg.com/img/jfs/t26596/176/2607120840/17021/f753db3e/5c0531cbN7380a580.jpg"
+                        alt="" width="205" height="60"></a>
+                    <div class="hd_search_wrap clearfix">
+                      <label for="keyword" class="hd_search_tip" style="display:none;"></label>
+                      <input class="hd_search_ipt" name="keyword" id="keyword" type="text" value="" placeholder=""
+                        original="" url="" maxLength="100" autocomplete="off" x-webkit-speech=""
+                        onwebkitspeechchange="emptySearchBar();" x-webkit-grammar="builtin:translate" />
+                      <button type="button" class="hd_search_btn" onclick="javascript:searchMeForClick();"
+                        clstag="pageclick|keycount|shouye_20181018|Search"><i
+                          class="icon iconfont">&#xe64e;</i></button>
+                    </div>
+                    <!--搜索提示 begin-->
+                    <div id="searchSuggest" class="hd_search_tips_result " style="display:none"
+                      onmouseover="$('#searchSuggest').show()"></div>
+                    <!--搜索提示 end-->
+                  </div>
+                </div>
+                <p id="hotKeywordsShow" class="hd_hot_search">
+                </p>
+                <!--搜索推荐-->
+              </div>
+              <div class="hd_mini_cart" id="miniCart" data-version="1" clstag="pageclick|keycount|shouye_20181018|Cart">
+                <u class="hd_c_num " id="in_cart_num" style="display: none"></u>
+                <a class="hd_prism_cart" href="//cart.yhd.com/cart/cart.do">
+                  <em class="icon iconfont">&#xe650;</em><span>购物车</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hd_header_nav">
+            <div class="category-list-root category-list-root_global" id="categoryBox">
+              <div class="category-title category-title_global"><i
+                  class="icon icon-menu iconfont">&#xe64d;</i><span>全部类目</span>
+                <i class="icon iconfont iconDown"
+                  style="font-size:12px;margin-left:3px;position: relative;top: -1px;">&#xe656;</i>
+                <i class="icon iconfont iconUp"
+                  style="display: none;font-size:12px;margin-left:3px;position: relative;top: -1px;">&#xe654;</i>
+              </div>
+              <div class="category-list global_loading">
+              </div>
+            </div>
+            <ul class="clearfix nav-list">
+              <li>
+                <a href="//coin.yhd.com/" title="金币签到" target="_blank"
+                  clstag="pageclick|keycount|shouye_20181018|NaviTab1">金币签到</a>
+              </li>
+              <li>
+                <a href="//channel.yhd.com/recharge.html" title="充值" target="_blank"
+                  clstag="pageclick|keycount|shouye_20181018|NaviTab2">充值</a>
+              </li>
+              <li>
+                <a href="https://coupon.yhd.com/couponCenter/home" title="领券中心" target="_blank"
+                  clstag="pageclick|keycount|shouye_20181018|NaviTab3">领券中心</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--content start-->
+
+
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
