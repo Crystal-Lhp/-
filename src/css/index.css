@@ -171,7 +171,7 @@ a.hd_vip6 {
 .hd_top_bar .icon {
   display: inline-block;
   vertical-align: middle;
-  float: left;
+   ;
 }
 .hd_top_bar .hd_indxProvce {
   position: relative;
